@@ -2,61 +2,44 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Egghead.io Filter Exercise</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    
-    <script>
-      const countryCode = 'UK'
+    <nav>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="/" class="menu__link">About</a>
+        </li>
+        <li class="menu__item">
+          <a href="/" class="menu__link">News</a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="/" class="submenu__link">Press Releases</a>
+            </li>
+            <li class="submenu__item">
+              <a href="/" class="submenu__link">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="/" class="menu__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-      const countries = [
-        {
-          city: 'London',
-          code: 'UK',
-          latitude: 51.5285578,
-          longitude: -0.2420242
-        },
-        {
-          city: 'Manchester',
-          code: 'UK',
-          latitude: 53.4722249,
-          longitude: -2.2936739
-        }, 
-        {
-          city: 'Paris',
-          code: 'FR',
-          latitude: 48.8588376,
-          longitude: 2.2768487
-        },
-        {
-          city: 'Nice',
-          code: 'FR',
-          latitude: 43.703169,
-          longitude: 7.1826056
-        },
-        {
-          city: 'Berlin',
-          code: 'DE',
-          latitude: 52.5065117,
-          longitude: 13.1438688
-        },
-        {
-          city: 'Munich',
-          code: 'DE',
-          latitude: 48.1548252,
-          longitude: 11.4014097
-        }
-      ];
-
-      const englishCities = countries.filter(country => country.code === countryCode)
-
-    </script>
+    <script src="src/js/nav.js"></script>
   </body>
 </html>
